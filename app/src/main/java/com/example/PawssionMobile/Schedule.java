@@ -1,25 +1,22 @@
-package com.example.afinal;
+package com.example.PawssionMobile;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
-
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.content.Intent;
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -56,7 +53,6 @@ public class Schedule extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule);
-        createNotificationChannel();
 
         textDateandTime = findViewById(R.id.textDateandTime);
         imagebuttonThree = findViewById(R.id.imagebuttonThree);
@@ -339,18 +335,6 @@ public class Schedule extends AppCompatActivity {
             }
         });
     }
-    private void createNotificationChannel(){
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
-            CharSequence name = "PawssionRemainderChannel";
-            String description = "Pawssion Reminder";
-            int importance = NotificationManager.IMPORTANCE_HIGH;
-            NotificationChannel channel = new NotificationChannel("Pawssion", name, importance);
-            channel.setDescription(description);
-
-            NotificationManager notificationManager = getSystemService(NotificationManager.class);
-            notificationManager.createNotificationChannel(channel);
-        }
-    }
 
     public void ClickMenu(View view){
         //Open drawer
@@ -369,6 +353,11 @@ public class Schedule extends AppCompatActivity {
     public void ClickFeed(View view){
         //Redirect activity to Feed
         MainActivity.redirectActivity(this, Feed.class);
+    }
+
+    public void ClickView(View view){
+        //Redirect activity to View Camera
+        MainActivity.redirectActivity(this, ViewCamera.class);
     }
 
     public void ClickSchedule(View view){

@@ -1,4 +1,4 @@
-package com.example.afinal;
+package com.example.PawssionMobile;
 
 import org.junit.Test;
 

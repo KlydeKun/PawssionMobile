@@ -1,24 +1,15 @@
- package com.example.afinal;
+ package com.example.PawssionMobile;
 
-import static android.os.Build.*;
-import static android.os.Build.VERSION.*;
+import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
-import android.app.Activity;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.os.Build;
-import android.os.Build.VERSION;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
 
  public class MainActivity extends AppCompatActivity {
     //Initialize variable
@@ -64,6 +55,12 @@ import android.widget.Toast;
          //Recreate activity
          recreate();
      }
+
+     public void ClickView(View view){
+         //Redirect activity to dashboard
+         redirectActivity(this,ViewCamera.class);
+     }
+
      public void ClickFeed(View view){
          //Redirect activity to dashboard
          redirectActivity(this,Feed.class);
