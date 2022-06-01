@@ -22,7 +22,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 
 
-
         //Assign Variable
         drawerLayout = findViewById(R.id.drawer_layout);
     }

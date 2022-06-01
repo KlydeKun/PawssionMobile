@@ -4,10 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidProjects/1. New Final/PawssionMobile/app/src/main/res/layout/activity_feed.xml" value="0.3546875" />
-        <entry key="..\:/AndroidProjects/1. New Final/PawssionMobile/app/src/main/res/layout/activity_schedule.xml" value="0.34923076923076923" />
-        <entry key="..\:/AndroidProjects/1. New Final/PawssionMobile/app/src/main/res/layout/activity_view_camera.xml" value="0.2454308093994778" />
+        <entry key="..\:/AndroidProjects/1. New Final/PawssionMobile/app/src/main/res/layout/activity_schedule.xml" value="0.175" />
+        <entry key="..\:/AndroidProjects/1. New Final/PawssionMobile/app/src/main/res/layout/activity_view_camera.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/1. New Final/PawssionMobile/app/src/main/res/layout/attrs.xml" value="0.1" />
         <entry key="..\:/AndroidProjects/1. New Final/PawssionMobile/app/src/main/res/layout/main_nav_drawer.xml" value="0.3546875" />
         <entry key="..\:/AndroidProjects/1. New Final/PawssionMobile/app/src/main/res/layout/main_toolbar.xml" value="0.1" />
+        <entry key="..\:/AndroidProjects/1. New Final/PawssionMobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1145" />
+        <entry key="..\:/AndroidProjects/1. New Final/PawssionMobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1145" />
         <entry key="..\:/AndroidProjects/FInal/app/src/main/res/drawable/ic_baseline_add_alarm.xml" value="0.232" />
         <entry key="..\:/AndroidProjects/FInal/app/src/main/res/drawable/ic_baseline_menu.xml" value="0.234" />
         <entry key="..\:/AndroidProjects/FInal/app/src/main/res/layout/activity_feed.xml" value="0.33" />

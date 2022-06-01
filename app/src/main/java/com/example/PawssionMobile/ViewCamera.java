@@ -3,7 +3,6 @@ package com.example.PawssionMobile;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -13,31 +12,34 @@ import com.marcoscg.ipcamview.IPCamView;
 public class ViewCamera extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
-    Button start;
-    EditText URL;
+    private IPCamView ipCamView;
+    Button buttonStart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_camera);
 
-        start = findViewById(R.id.button);
-        URL = findViewById(R.id.editText_ipAddress);
+        buttonStart = (Button) findViewById(R.id.buttonStart);
 
-        IPCamView ipcam = findViewById(R.id.ip_cam_view);
-        start.setOnClickListener(new View.OnClickListener() {
+        buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String con = URL.getText().toString();
-                if(con != null){
-                    ipcam.setUrl(con);
-                    ipcam.setInterval(5);
-                    ipcam.start();
-                }
+                ipCamView = findViewById(R.id.ip_cam_view);
+                ipCamView.setUrl("http://192.168.0.62/cam-hi.jpg");
+                ipCamView.setInterval(100);
+                ipCamView.start();
             }
         });
+
+
+
         //Assign variable
         drawerLayout = findViewById(R.id.drawer_layout);
+    }
+
+    public void stop(View view){
+        ipCamView.stop();
     }
 
     public void ClickMenu(View view){

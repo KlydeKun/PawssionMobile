@@ -21,7 +21,7 @@ import java.text.SimpleDateFormat;
 public class Feed extends AppCompatActivity {
     //Initialize variable
     DrawerLayout drawerLayout;
-    String[] Colors={"23 grams(appx.)","30 grams(appx.)","39 grams(appx.)"};
+    String[] Colors={"1/4 cup(appx.)","1/2 cup(appx.)","3/4 cup(appx.)"};
     String colorSelected;
     TextView textDateandTime;
     Boolean connected = false;
@@ -49,8 +49,6 @@ public class Feed extends AppCompatActivity {
             final FirebaseDatabase database = FirebaseDatabase.getInstance();
             final DatabaseReference intensityDbStatus = database.getReference("Feed");
             mdatabase = FirebaseDatabase.getInstance().getReference();
-
-
 
             btnDateandTime.setOnClickListener(new View.OnClickListener() {
                 @Override
